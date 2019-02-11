@@ -9511,5 +9511,16 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.changeBgColor {
+  border: 3px solid black;
+}
+
+.connection-boutton {
+  border-radius: 5px;
+}
+
+.img-header {
+  background-color: #f3f2f3;
+}
 
 /*# sourceMappingURL=style.css.map */

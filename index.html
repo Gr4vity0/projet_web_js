@@ -10,7 +10,7 @@
 <body>
     
     <!-- debut header -->
-    <header>
+    <header class="my-3 header">
         <h1 class="text-center font-weight-bold mt-5">emporium.</h1>
         
         <!-- debut navbar -->
@@ -19,8 +19,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto emmet-5">
+            <div class="collapse navbar-collapse offset-2" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item active px-2">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -42,23 +42,25 @@
                 </ul>
                 <ul class="navbar-nav ml-4">                   
                     <li class="nav-item">
-                        <input type="button" class="bg-dark px-3 mx-2">
+                        <input type="button" class="bg-dark px-3 mx-1 changeBgColor">
                     </li>
                     <li class="nav-item">
-                        <input type="button" class="bg-light px-3 mx-2">
+                        <input type="button" class="bg-light px-3 mx-1 changeBgColor">
                     </li>
                     <li class="nav-item">
-                        <input type="button" class="bg-dark text-light" value="se connecter">
+                        <input type="button" class="bg-dark text-light connection-boutton" value="se connecter">
                     </li>
                 </ul>
             </div>
         </nav>
         <!-- fin navbar -->
-        <img src="/public/images/" alt="">
+        <div class="text-center img-header"> 
+            <img src="/public/images/slider-1.jpg" class="img-fluid" alt="img header">
+        </div>
     </header>
     <!-- fin header -->
-
-
+    
+    
     <script src="public/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
