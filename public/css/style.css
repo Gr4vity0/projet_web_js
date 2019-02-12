@@ -9511,6 +9511,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+@font-face {
+  font-family: "Courgette";
+  src: url("../../public/fonts/Courgette-Regular.ttf");
+}
 .changeBgColor {
   border: 3px solid black;
 }
@@ -9520,7 +9524,16 @@ h3 {
 }
 
 .img-header {
-  background-color: #f3f2f3;
+  background-color: #f3f2f3 !important;
+}
+
+.prix-product {
+  font-weight: bold;
+  color: #bd584e !important;
+}
+
+.light-grey {
+  color: #949494 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
