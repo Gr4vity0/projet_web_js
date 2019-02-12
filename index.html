@@ -12,7 +12,7 @@
 <body>
 
     <!-- debut header -->
-    <header class="my-3 header">
+    <header class="py-3 header">
         <h1 class="text-center font-weight-bold mt-5">emporium.</h1>
 
         <!-- debut navbar -->
@@ -45,10 +45,10 @@
                 </ul>
                 <ul class="navbar-nav ml-4">
                     <li class="nav-item">
-                        <input type="button" class="bg-dark px-3 mx-1 changeBgColor">
+                        <input type="button" id="btn-noir" class="bg-dark px-3 mx-1 changeBgColor">
                     </li>
                     <li class="nav-item">
-                        <input type="button" class="bg-light px-3 mx-1 changeBgColor">
+                        <input type="button" id="btn-blanc" class="bg-light px-3 mx-1 changeBgColor">
                     </li>
                     <li class="nav-item">
                         <input type="button" class="bg-dark text-light connection-boutton" value="se connecter">
@@ -84,58 +84,67 @@
 
     <!-- debut section products -->
     <section class="products">
-            <h1 class="text-center font-weight-bold mt-5 mb-5">Recent Products</h1>
+        <h1 class="text-center font-weight-bold mt-5 mb-5">Recent Products</h1>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-luxry-sofa.jpg" alt="" class="img-fluid">
+                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-luxry-sofa.jpg" alt=""
+                        class="img-fluid">
                     <div class="text-center">
                         <h6>Luxury Sofa</h6>
                         <p class="prix-product">$600.00</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-gloves.jpg" alt="" class="img-fluid">
+                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-gloves.jpg" alt=""
+                        class="img-fluid">
                     <div class="text-center">
                         <h6>Leather gloves</h6>
                         <p class="prix-product"><span class="light-grey">$34.00 </span>$27.00</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-cups.jpg" alt="" class="img-fluid">
+                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-cups.jpg" alt=""
+                        class="img-fluid">
                     <div class="text-center">
                         <h6>Colorful bowl</h6>
                         <p class="prix-product">$18.00</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-bag.jpg" alt="" class="img-fluid">
+                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-bag.jpg" alt=""
+                        class="img-fluid">
                     <div class="text-center">
                         <h6>Woman bag</h6>
                         <p class="prix-product"><span class="light-grey">$420.00 </span>$350.00</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-tshitr.jpg" alt="" class="img-fluid">
+                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-tshitr.jpg" alt=""
+                        class="img-fluid">
                     <div class="text-center">
                         <h6>Minimal T-shirt</h6>
                         <p class="prix-product">$15.00</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-plates.jpg" alt="" class="img-fluid">
+                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-plates.jpg" alt=""
+                        class="img-fluid">
                     <div class="text-center">
                         <h6>Plate set</h6>
                         <p class="prix-product">$30.00</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-modern-sofa.jpg" alt="" class="img-fluid">
+                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-modern-sofa.jpg" alt=""
+                        class="img-fluid">
                     <div class="text-center">
                         <h6>Modern sofa</h6>
                         <p class="prix-product">$900.00</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-bed.jpg" alt="" class="img-fluid">
+                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-bed.jpg" alt=""
+                        class="img-fluid">
                     <div class="text-center">
                         <h6>Bed linen</h6>
                         <p class="prix-product">$79.00</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-shoes.jpg" alt="" class="img-fluid">
+                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-shoes.jpg" alt=""
+                        class="img-fluid">
                     <div class="text-center">
                         <h6>Minimal shoes</h6>
                         <p class="prix-product">$60.00</p>
@@ -148,10 +157,23 @@
 
     <!-- debut section products -->
     <section class="parallax">
-        <img src="/public/images/cta-bg.jpg" alt="">
+        <img class="img-fluid" src="/public/images/cta-bg.jpg" alt="">
         <div></div>
     </section>
     <!-- fin section products -->
+
+
+    <!-- debut section footer -->
+    <footer class="footer">
+
+    </footer>
+    <!-- fin section footer -->
+
+    <!-- debut section copyright -->
+    <copyright class="copyright bg-dark">
+        <p class="light-grey">Copyright 2020 GoodLayers, All Right Reserved</p>
+    </copyright>
+    <!-- fin section copyright -->
 
     <script src="public/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
