@@ -6,185 +6,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 
 <body>
+    <div class="connection-inscription m-5 p-4 bg-dark mx-auto" id="test2">
 
-    <!-- debut header -->
-    <header class="py-3 header">
-        <h1 class="text-center font-weight-bold mt-5">emporium.</h1>
-
-        <!-- debut navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light transparent">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse offset-2" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active px-2">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#">products</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#">blog</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#">elements</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#">about</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#">contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-4">
-                    <li class="nav-item">
-                        <input type="button" id="btn-noir" class="bg-dark px-3 mx-1 changeBgColor">
-                    </li>
-                    <li class="nav-item">
-                        <input type="button" id="btn-blanc" class="bg-light px-3 mx-1 changeBgColor">
-                    </li>
-                    <li class="nav-item">
-                        <input type="button" class="bg-dark text-light connection-boutton" value="se connecter">
-                    </li>
-                </ul>
+        <!-- espace connection -->
+        <form id="connection">
+            <h1 class="text-success text-center">Connection</h1>
+            <div class="form-group">
+                <label for="user" class="label-form">Votre nom d'utilisateur</label>
+                <input type="text" class="form-control" id="user" placeholder="Tapez votre nom d'utilisateur">
             </div>
-        </nav>
-        <!-- fin navbar -->
-
-        <div class="text-center img-header">
-            <img src="/public/images/slider-1.jpg" class="img-fluid" alt="img header">
-        </div>
-    </header>
-    <!-- fin header -->
-
-    <!-- debut section living-room -->
-    <section class="living-room p-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-4 py-2">
-                    <img class="img-fluid" src="/public/images/services/service-1.jpg" alt="slider-1">
-                </div>
-                <div class="col-sm-12 col-lg-4 py-2">
-                    <img class="img-fluid" src="/public/images/services/service-2.jpg" alt="slide-2">
-                </div>
-                <div class="col-sm-12 col-lg-4 py-2">
-                    <img class="img-fluid" src="/public/images/services/slider-3.jpg" alt="slide-3">
-                </div>
+            <div class="form-group">
+                <label for="mdp" class="label-form">Mot de passe</label>
+                <input type="password" class="form-control" id="mdp" placeholder="Choisissez votre mot de passe">
             </div>
-        </div>
-    </section>
-    <!-- fin section living-room -->
+            <button type="submit" class="btn btn-primary" id="connection_s'inscrire">Se connecter</button>
+            <button type="submit" class="btn btn-primary" id="inscription">S'inscrire</button>
+        </form>
 
-    <!-- debut section products -->
-    <section class="products">
-        <h1 class="text-center font-weight-bold mt-5 mb-5">Recent Products</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-luxry-sofa.jpg" alt=""
-                        class="img-fluid">
-                    <div class="text-center">
-                        <h6>Luxury Sofa</h6>
-                        <p class="prix-product">$600.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-gloves.jpg" alt=""
-                        class="img-fluid">
-                    <div class="text-center">
-                        <h6>Leather gloves</h6>
-                        <p class="prix-product"><span class="light-grey">$34.00 </span>$27.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-cups.jpg" alt=""
-                        class="img-fluid">
-                    <div class="text-center">
-                        <h6>Colorful bowl</h6>
-                        <p class="prix-product">$18.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-bag.jpg" alt=""
-                        class="img-fluid">
-                    <div class="text-center">
-                        <h6>Woman bag</h6>
-                        <p class="prix-product"><span class="light-grey">$420.00 </span>$350.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-tshitr.jpg" alt=""
-                        class="img-fluid">
-                    <div class="text-center">
-                        <h6>Minimal T-shirt</h6>
-                        <p class="prix-product">$15.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-plates.jpg" alt=""
-                        class="img-fluid">
-                    <div class="text-center">
-                        <h6>Plate set</h6>
-                        <p class="prix-product">$30.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-modern-sofa.jpg" alt=""
-                        class="img-fluid">
-                    <div class="text-center">
-                        <h6>Modern sofa</h6>
-                        <p class="prix-product">$900.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-bed.jpg" alt=""
-                        class="img-fluid">
-                    <div class="text-center">
-                        <h6>Bed linen</h6>
-                        <p class="prix-product">$79.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-shoes.jpg" alt=""
-                        class="img-fluid">
-                    <div class="text-center">
-                        <h6>Minimal shoes</h6>
-                        <p class="prix-product">$60.00</p>
-                    </div>
-                </div>
+        <!-- espace inscription -->
+        <form id="inscription-form">
+            <h1 class="text-success text-center">Inscription</h1>
+            <div class="form-group">
+                <label for="user2" class="label-form">Votre nom d'utilisateur</label>
+                <input type="text" class="form-control" id="user2" placeholder="Tapez votre nom d'utilisateur">
+            </div>
+            <div class="form-group">
+                <label for="mdp2" class="label-form">Mot de passe</label>
+                <input type="password" class="form-control" id="mdp2" placeholder="Choisissez votre mot de passe">
+            </div>
+            <div class="form-group">
+                <label for="mdp3" class="label-form">Confirmez votre mot de passe</label>
+                <input type="password" class="form-control" id="mdp3" placeholder="confirmez votre mot de passe">
+            </div>
+
+        <div class="form-group">
+            <label for="email" class="label-form">Votre email</label>
+            <input type="email" class="form-control" id="email" placeholder="Votre adresse email">
+        </div>
+        <div class="form-group">
+            <label for="email2" class="label-form">Confirmez votre email</label>
+            <input type="email" class="form-control" id="email2" placeholder="Confirmez votre adresse email">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+</div>
+<!-- debut header -->
+<header class="py-3 header">
+    <h1 class="text-center font-weight-bold mt-5">emporium.</h1>
+    
+    <!-- debut navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light transparent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse offset-2" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active px-2">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link" href="#">products</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link" href="#">blog</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link" href="#">elements</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link" href="#">about</a>
+            </li>
+            <li class="nav-item px-2">
+                <a class="nav-link" href="#">contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-4">
+            <li class="nav-item">
+                <input type="button" id="btn-noir" class="bg-dark px-3 mx-1 changeBgColor">
+            </li>
+            <li class="nav-item">
+                <input type="button" id="btn-blanc" class="bg-light px-3 mx-1 changeBgColor">
+            </li>
+            <li class="nav-item">
+                <input type="button" id="btn-connection" class="btn btn-primary p-1" value="se connecter">
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- fin navbar -->
+
+<div class="text-center img-header">
+    <img src="/public/images/slider-1.jpg" class="img-fluid" alt="img header">
+</div>
+</header>
+<!-- fin header -->
+
+<!-- debut section living-room -->
+<section class="living-room p-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 py-2">
+                <img class="img-fluid" src="/public/images/services/service-1.jpg" alt="slider-1">
+            </div>
+            <div class="col-sm-12 col-lg-4 py-2">
+                <img class="img-fluid" src="/public/images/services/service-2.jpg" alt="slide-2">
+            </div>
+            <div class="col-sm-12 col-lg-4 py-2">
+                <img class="img-fluid" src="/public/images/services/slider-3.jpg" alt="slide-3">
             </div>
         </div>
-    </section>
-    <!-- fin section products -->
+    </div>
+</section>
+<!-- fin section living-room -->
 
-    <!-- debut section products -->
-    <section class="parallax">
-        <img class="img-fluid" src="/public/images/cta-bg.jpg" alt="">
-        <div></div>
-    </section>
-    <!-- fin section products -->
+<!-- debut section products -->
+<section class="products">
+    <h1 class="text-center font-weight-bold mt-5 mb-5">Recent Products</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-luxry-sofa.jpg"
+                alt="luxury sofa" class="img-fluid">
+                <div class="text-center">
+                    <h6>Luxury Sofa</h6>
+                    <p class="prix-product">$600.00</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-gloves.jpg"
+                alt="product gloves" class="img-fluid">
+                <div class="text-center">
+                    <h6>Leather gloves</h6>
+                    <p class="prix-product"><span class="light-grey">$34.00 </span>$27.00</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-cups.jpg"
+                alt="product cups" class="img-fluid">
+                <div class="text-center">
+                    <h6>Colorful bowl</h6>
+                    <p class="prix-product">$18.00</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-bag.jpg"
+                alt="produit bag" class="img-fluid">
+                <div class="text-center">
+                    <h6>Woman bag</h6>
+                    <p class="prix-product"><span class="light-grey">$420.00 </span>$350.00</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-tshitr.jpg"
+                alt="product t-shirt" class="img-fluid">
+                <div class="text-center">
+                    <h6>Minimal T-shirt</h6>
+                    <p class="prix-product">$15.00</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-plates.jpg"
+                alt="product plates" class="img-fluid">
+                <div class="text-center">
+                    <h6>Plate set</h6>
+                    <p class="prix-product">$30.00</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-modern-sofa.jpg"
+                alt="modern sofa" class="img-fluid">
+                <div class="text-center">
+                    <h6>Modern sofa</h6>
+                    <p class="prix-product">$900.00</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <img src="/public/images/products_mini/product-bed.jpg" alt="product beds" class="img-fluid">
+                <div class="text-center">
+                    <h6>Bed linen</h6>
+                    <p class="prix-product">$79.00</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="img-overlay">
+                    <img src="/public/images/products_mini/product-shoes.jpg" alt="product shoes"
+                    class="img-fluid img-test">
+                    <div class="overlay">
+                        <div class="text">
+                            <div class="row">
+                                <div class="col-6 bg-dark text-center">
+                                    <i class="far fa-eye">View Details</i>
+                                </div>
+                                <div class="col-6 select-option text-center">
+                                    <i class="far fa-eye">View Details</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h6>Minimal shoes</h6>
+                    <p class="prix-product">$60.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- fin section products -->
+
+<!-- debut section parallax -->
+<section class="parallax">
+    <div class="div-para"><img class="img-fluid" src="/public/images/cta-bg.jpg" alt="image shop"></div>
+</section>
+<!-- fin section parallax -->
 
 
-    <!-- debut section footer -->
-    <footer class="footer">
-
+<!-- debut section footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 text-center">ok
+                <h1>about us</h1>
+                <p style="color: #838383;">A wonderful serenity has taken possession of my entire soul, like these
+                    sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of
+                    existence in this spot, which was created for the bliss of</p>
+                </div>
+                <div class="col-4 text-center">ok
+                    <h1>recent posts</h1>
+                    <ul>
+                        <li>Hello world!</li>
+                        <li>Wonderful serenity has taken</li>
+                        <li>In my soul and absorb its power</li>
+                        <li>I hear the buzz of the little</li>
+                    </ul>
+                </div>
+                <div class="col-4 text-center">ok
+                    <h1>tag cloud</h1>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- fin section footer -->
-
+    
     <!-- debut section copyright -->
-    <copyright class="copyright bg-dark">
-        <p class="light-grey">Copyright 2020 GoodLayers, All Right Reserved</p>
-    </copyright>
+    <section class="copyright text-center p-5">
+        <p style="color: #838383;">Copyright 2020 GoodLayers, All Right Reserved</p>
+    </section>
     <!-- fin section copyright -->
-
+    
     <script src="public/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

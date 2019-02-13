@@ -9519,8 +9519,18 @@ h3 {
   border: 3px solid black;
 }
 
-.connection-boutton {
-  border-radius: 5px;
+#test2 {
+  width: 80%;
+  height: auto;
+  display: none;
+}
+
+#inscription {
+  display: none;
+}
+
+.label-form {
+  color: white;
 }
 
 .img-header {
@@ -9537,7 +9547,61 @@ h3 {
 }
 
 .parallax {
-  height: 80vh;
+  height: 80%;
+}
+
+.img-overlay {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  display: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.img-overlay:hover .overlay {
+  height: 30%;
+}
+
+.img-overlay:hover .text {
+  display: inline;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+.text-view {
+  font-size: 14px;
+}
+
+body i {
+  font-size: 10px;
+}
+
+.footer {
+  background-color: #212121;
+}
+
+.copyright {
+  background-color: #262626;
+  color: #9b9b9b !important;
 }
 
 /*# sourceMappingURL=style.css.map */
