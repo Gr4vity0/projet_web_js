@@ -9512,8 +9512,8 @@ h3 {
   }
 }
 @font-face {
-  font-family: "Courgette";
-  src: url("../../public/fonts/Courgette-Regular.ttf");
+  font-family: "Poppins";
+  src: url("../../public/fonts/Poppins-Regular.ttf");
 }
 .changeBgColor {
   border: 3px solid black;
@@ -9652,6 +9652,11 @@ body i {
 
 .ul-footer {
   display: block;
+}
+
+.h1-footer {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
