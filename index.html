@@ -44,57 +44,10 @@
             </div>
         </div>
     </div>
-    <div class="connection-inscription m-5 p-4 bg-dark mx-auto" id="formulaire">
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- espace inscription
-        <form id="inscription-form">
-            <h1 class="text-success text-center">Inscription</h1>
-            <div class="form-group">
-                <label for="user2" class="label-form">Votre nom d'utilisateur</label>
-                <input type="text" class="form-control" id="user2" placeholder="Tapez votre nom d'utilisateur">
-            </div>
-            <div class="form-group">
-                <label for="mdp2" class="label-form">Mot de passe</label>
-                <input type="password" class="form-control" id="mdp2" placeholder="Choisissez votre mot de passe">
-            </div>
-            <div class="form-group">
-                <label for="mdp3" class="label-form">Confirmez votre mot de passe</label>
-                <input type="password" class="form-control" id="mdp3" placeholder="confirmez votre mot de passe">
-            </div>
 
-            <div class="form-group">
-                <label for="email" class="label-form">Votre email</label>
-                <input type="email" class="form-control" id="email" placeholder="Votre adresse email">
-            </div>
-            <div class="form-group">
-                <label for="email2" class="label-form">Confirmez votre email</label>
-                <input type="email" class="form-control" id="email2" placeholder="Confirmez votre adresse email">
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-        </form> -->
-    </div>
+
     <!-- debut header -->
-    <header class="py-3 header">
+    <header class="header py-3">
         <h1 class="text-center font-weight-bold mt-5">emporium.</h1>
 
         <!-- debut navbar -->
@@ -127,22 +80,15 @@
                 </ul>
                 <ul class="navbar-nav ml-4">
                     <li class="nav-item">
-                        <input type="button" id="btn-noir" class="bg-dark px-3 mx-1 changeBgColor">
+                        <input type="button" id="btn-noir" class="bg-dark changeBgColor px-3 mx-1">
                     </li>
                     <li class="nav-item">
-                        <input type="button" id="btn-blanc" class="bg-light px-3 mx-1 changeBgColor">
+                        <input type="button" id="btn-blanc" class="bg-light changeBgColor px-3 mx-1">
                     </li>
                     <li class="nav-item">
-                        <input type="button" id="btn-connection" class="btn btn-primary p-1" value="se connecter">
-                    </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Launch demo modal
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
-                            Launch demo modal
+                        <button type="button" class="btn btn-primary mx-1" data-toggle="modal"
+                            data-target="#exampleModal">
+                            Se connecter / S'inscrire
                         </button>
                     </li>
                 </ul>
@@ -150,11 +96,28 @@
         </nav>
         <!-- fin navbar -->
 
-        <div class="text-center img-header">
-            <img src="/public/images/slider-1.jpg" class="img-fluid" alt="img header">
+        <div class="img-header">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>Shop at</h4>
+                            <h6>emporium</h6>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my</p>
+                            <input type="button" value="sale items" class="btn-head-para text-uppercase font-weight-bold p-3">
+
+                        </div>
+                        <div class="col-6">
+                            <img src="/public/images/slider-1.jpg" class="img-fluid" alt="img header">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
     <!-- fin header -->
+
 
     <!-- debut section living-room -->
     <section class="living-room p-4">
@@ -174,87 +137,208 @@
     </section>
     <!-- fin section living-room -->
 
+
     <!-- debut section products -->
     <section class="products">
         <h1 class="text-center font-weight-bold mt-5 mb-5">Recent Products</h1>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-luxry-sofa.jpg"
-                        alt="luxury sofa" class="img-fluid">
-                    <div class="text-center">
-                        <h6>Luxury Sofa</h6>
-                        <p class="prix-product">$600.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-gloves.jpg"
-                        alt="product gloves" class="img-fluid">
-                    <div class="text-center">
-                        <h6>Leather gloves</h6>
-                        <p class="prix-product"><span class="light-grey">$34.00 </span>$27.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-cups.jpg"
-                        alt="product cups" class="img-fluid">
-                    <div class="text-center">
-                        <h6>Colorful bowl</h6>
-                        <p class="prix-product">$18.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-bag.jpg"
-                        alt="produit bag" class="img-fluid">
-                    <div class="text-center">
-                        <h6>Woman bag</h6>
-                        <p class="prix-product"><span class="light-grey">$420.00 </span>$350.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-tshitr.jpg"
-                        alt="product t-shirt" class="img-fluid">
-                    <div class="text-center">
-                        <h6>Minimal T-shirt</h6>
-                        <p class="prix-product">$15.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-plates.jpg"
-                        alt="product plates" class="img-fluid">
-                    <div class="text-center">
-                        <h6>Plate set</h6>
-                        <p class="prix-product">$30.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4"><img src="/public/images/products_mini/product-modern-sofa.jpg"
-                        alt="modern sofa" class="img-fluid">
-                    <div class="text-center">
-                        <h6>Modern sofa</h6>
-                        <p class="prix-product">$900.00</p>
-                    </div>
-                </div>
                 <div class="col-sm-12 col-lg-4">
-                    <img src="/public/images/products_mini/product-bed.jpg" alt="product beds" class="img-fluid">
-                    <div class="text-center">
-                        <h6>Bed linen</h6>
-                        <p class="prix-product">$79.00</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-4">
-                    <div class="img-overlay">
-                        <img src="/public/images/products_mini/product-shoes.jpg" alt="product shoes"
-                            class="img-fluid img-test">
-                        <div class="overlay">
-                            <div class="text">
-                                <div class="row">
-                                    <div class="col-6 bg-dark text-center">
-                                        <i class="far fa-eye">View Details</i>
-                                    </div>
-                                    <div class="col-6 select-option text-center">
-                                        <i class="far fa-eye">View Details</i>
-                                    </div>
-                                </div>
+                    <div class="modifIMG">
+                        <img src="/public/images/products_mini/product-luxry-sofa.jpg" alt="Luxury Sofa"
+                            class="img-fluid">
+                        <div class="row m-0 w-100">
+                            <div class="col-6 bg-dark py-3">
+                                <a href="#" class="text-light">
+                                    <i class="far fa-eye mx-1"></i> View detail</a>
+                            </div>
+                            <div class="col-6 bg-danger py-3">
+                                <a href="#" class="text-light">
+                                    <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                             </div>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <h6>Minimal shoes</h6>
-                        <p class="prix-product">$60.00</p>
+                    <div class="m-4 text-center">
+                        <a class="decoration-none" href="#">
+                            <h5 class="title-products font-weight-bold">Luxury Sofa</h5>
+                        </a>
+                        <p class="prix-product font-weight-bold">$600.00</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-4">
+                    <div class="modifIMG">
+                        <img src="/public/images/products_mini/product-gloves.jpg" alt="product-gloves"
+                            class="img-fluid">
+                        <div class="row m-0 w-100">
+                            <div class="col-6 bg-dark py-3">
+                                <a href="#" class="text-light">
+                                    <i class="far fa-eye mx-1"></i> View detail</a>
+                            </div>
+                            <div class="col-6 bg-danger py-3">
+                                <a href="#" class="text-light">
+                                    <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-4 text-center">
+                        <span class="sales-icone rounded-circle font-weight-bold py-3 px-1 offset-2">sales!</span>
+                        <a class="decoration-none" href="#">
+                            <h5 class="title-products font-weight-bold">Leather Gloves</h5>
+                        </a>
+                        <p class="prix-product font-weight-bold"><span class="light-grey"><del>$34.00</del></span>
+                            $600.00</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="modifIMG">
+                        <img src="/public/images/products_mini/product-cups.jpg" alt="product cups" class="img-fluid">
+                        <div class="row m-0 w-100">
+                            <div class="col-6 bg-dark py-3">
+                                <a href="#" class="text-light">
+                                    <i class="far fa-eye mx-1"></i> View detail</a>
+                            </div>
+                            <div class="col-6 py-3 bg-danger">
+                                <a href="#" class="text-light">
+                                    <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-4 text-center">
+                        <a class="decoration-none" href="#">
+                            <h5 class="title-products font-weight-bold">Colorful Bowl</h5>
+                        </a>
+                        <p class="prix-product font-weight-bold">$600.00</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="modifIMG">
+                        <img src="/public/images/products_mini/product-bag.jpg" alt="product bags" class="img-fluid">
+                        <div class="row m-0 w-100">
+                            <div class="col-6 bg-dark py-3">
+                                <a href="#" class="text-light">
+                                    <i class="far fa-eye mx-1"></i> View detail</a>
+                            </div>
+                            <div class="col-6 bg-danger py-3">
+                                <a href="#" class="text-light">
+                                    <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center m-4">
+                        <span class="sales-icone rounded-circle font-weight-bold py-3 px-1 offset-2">sales!</span>
+                        <a class="decoration-none" href="#">
+                            <h5 class="title-products font-weight-bold">Women Bag</h5>
+                        </a>
+                        <p class="prix-product font-weight-bold"><span class="light-grey"><del>$34.00</del></span>
+                            $600.00</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="modifIMG">
+                        <img src="/public/images/products_mini/product-tshitr.jpg" alt="product tshirts"
+                            class="img-fluid">
+                        <div class="row m-0 w-100">
+                            <div class="col-6 bg-dark py-3">
+                                <a href="#" class="text-light">
+                                    <i class="far fa-eye mx-1"></i> View detail</a>
+                            </div>
+                            <div class="col-6 bg-danger py-3">
+                                <a href="#" class="text-light">
+                                    <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center m-4">
+                        <a class="decoration-none" href="#">
+                            <h5 class="font-weight-bold title-products">Minimal T-Shirt</h5>
+                        </a>
+                        <p class="font-weight-bold prix-product">$600.00</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="modifIMG">
+                        <img src="/public/images/products_mini/product-plates.jpg" alt="" class="img-fluid">
+                        <div class="row w-100 m-0">
+                            <div class="col-6 bg-dark py-3">
+                                <a href="#" class="text-light">
+                                    <i class="far fa-eye mx-1"></i> View detail</a>
+                            </div>
+                            <div class="col-6 bg-danger py-3">
+                                <a href="#" class="text-light">
+                                    <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-4 text-center">
+                        <a class="decoration-none" href="#">
+                            <h5 class="title-products font-weight-bold">Plates set</h5>
+                        </a>
+                        <p class="prix-product font-weight-bold">$600.00</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="modifIMG">
+                        <img src="/public/images/products_mini/product-modern-sofa.jpg" alt="modern sofa"
+                            class="img-fluid">
+                        <div class="row m-0 w-100">
+                            <div class="col-6 bg-dark py-3">
+                                <a href="#" class="text-light">
+                                    <i class="far fa-eye mx-1"></i> View detail</a>
+                            </div>
+                            <div class="col-6 bg-danger py-3">
+                                <a href="#" class="text-light">
+                                    <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-4 text-center">
+                        <a class="decoration-none" href="#">
+                            <h5 class="title-products font-weight-bold">Modern Sofa</h5>
+                        </a>
+                        <p class="prix-product font-weight-bold">$600.00</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="modifIMG">
+                        <img src="/public/images/products_mini/product-bed.jpg" alt="" class="img-fluid">
+                        <div class="row m-0 w-100">
+                            <div class="col-6 bg-dark py-3">
+                                <a href="#" class="text-light">
+                                    <i class="far fa-eye mx-1"></i> View detail</a>
+                            </div>
+                            <div class="col-6 bg-danger py-3">
+                                <a href="#" class="text-light">
+                                    <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center m-4">
+                        <a class="decoration-none" href="#">
+                            <h5 class="title-products font-weight-bold">Bed Linen</h5>
+                        </a>
+                        <p class="prix-product font-weight-bold">$600.00</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="modifIMG">
+                        <img src="/public/images/products_mini/product-shoes.jpg" alt="product shoes" class="img-fluid">
+                        <div class="row m-0 w-100">
+                            <div class="col-6 bg-dark py-3">
+                                <a href="#" class="text-light">
+                                    <i class="far fa-eye mx-1"></i> View detail</a>
+                            </div>
+                            <div class="col-6 bg-danger py-3">
+                                <a href="#" class="text-light">
+                                    <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-4 text-center">
+                        <a class="decoration-none" href="#">
+                            <h5 class="title-products font-weight-bold">Minimal Shoes</h5>
+                        </a>
+                        <p class="prix-product font-weight-bold">$600.00</p>
                     </div>
                 </div>
             </div>
@@ -262,67 +346,93 @@
     </section>
     <!-- fin section products -->
 
+
     <!-- debut section parallax -->
     <section class="parallax">
-        <div class="div-parallax">
-            <div class="parallax-div">
-                ok
-            </div>
+        <div class="parallax-div text-center">
+            <h1 class="text-white font-weight-bold">Discover Thousands Of Great Products</h1>
+            <input type="button" value="learn more" class="btn-head-para text-uppercase font-weight-bold p-3">
         </div>
     </section>
     <!-- fin section parallax -->
 
+
     <!-- debut section customers -->
-    <section class="container py-5">
-        <div class="row justify-content-around">
-            <div class="customers-grey col-sm-12 col-md-3 col-lg-3 text-center my-2"> 
-                <i class="far fa-check-circle fontawesome py-5 my-2"></i>
-                <h5 class="text-uppercase font-weight-bold pb-5 w-50 mx-auto">trusted by 10,000+ customers</h5>
-                <p class="w-75 mx-auto">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.</p>
-                <button class="btn btn-dark p-3 my-5">learn more</button>
-            </div>
-            
-            <div class="customers-bordeau col-sm-12 col-md-3 col-lg-3 text-center my-2 mx-1">
-                <i class="fas fa-paper-plane fontawesome py-5 my-2"></i>
-                <h5 class="text-uppercase font-weight-bold pb-5 w-50 mx-auto">trusted by 10,000+ customers</h5>
-                <p class="w-75 mx-auto">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.</p>
-                <button class="btn btn-light font-weight-bold p-3 my-5">learn more</button>
+    <section class="container-fluid py-4">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-4 text-center my-2">
+                <div class="customers-grey ml-3">
+                    <i class="far fa-check-circle fontawesome py-5 my-2"></i>
+                    <h5 class="text-uppercase font-weight-bold pb-5 w-50 mx-auto">trusted by 10,000+ customers</h5>
+                    <p class="w-75 mx-auto">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts.</p>
+                    <button class="btn btn-dark p-3 my-5">learn more</button>
+                </div>
             </div>
 
-            <div class="customers-grey col-sm-12 col-md-3 col-lg-3 text-center my-2">
-                <i class="far fa-check-circle fontawesome py-5 my-2"></i>
-                <h5 class="text-uppercase font-weight-bold pb-5 w-50 mx-auto">trusted by 10,000+ customers</h5>
-                <p class="w-75 mx-auto">Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there live the blind texts.</p>
-                <button class="btn btn-dark p-3 my-5">learn more</button></div>
+            <div class="col-sm-12 col-md-3 col-lg-4 text-center my-2">
+                <div class="customers-bordeau ml-3">
+                    <i class="fas fa-paper-plane fontawesome py-5 my-2"></i>
+                    <h5 class="text-uppercase font-weight-bold pb-5 w-50 mx-auto">trusted by 10,000+ customers</h5>
+                    <p class="w-75 mx-auto">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts.</p>
+                    <button class="btn btn-light font-weight-bold p-3 my-5">learn more</button>
+                </div>
+            </div>
+            <div class=" col-sm-12 col-md-3 col-lg-4 text-center my-2">
+                <div class="customers-grey ml-3">
+                    <i class="far fa-check-circle fontawesome py-5 my-2"></i>
+                    <h5 class="text-uppercase font-weight-bold pb-5 w-50 mx-auto">trusted by 10,000+ customers</h5>
+                    <p class="w-75 mx-auto">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts.</p>
+                    <button class="btn btn-dark p-3 my-5">learn more</button>
+                </div>
+            </div>
         </div>
     </section>
     <!-- fin section customers -->
+
 
     <!-- debut section footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4 text-center">ok
-                    <h1 class="text-light font-weight-bold h1-footer text-left pl-4 text-uppercase py-4">about us</h1>
-                    <p class="text-footer px-3 text-left">A wonderful serenity has taken possession of my entire soul, like these
-                        sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of
-                        existence in this spot, which was created for the bliss of</p>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 text-center border-left-col-footer">ok
-                    <h1 class="text-light font-weight-bold h1-footer text-left pl-4 text-uppercase py-4">recent posts</h1>
-                    <ul>
-                        <li class="recent-posts py-2 my-1 text-left">&nbsp;&nbsp;&nbsp;&nbsp;Hello world!</li>
-                        <li class="recent-posts py-2 my-1 text-left">&nbsp;&nbsp;&nbsp;&nbsp;Wonderful serenity has taken</li>
-                        <li class="recent-posts py-2 my-1 text-left">&nbsp;&nbsp;&nbsp;&nbsp;In my soul and absorb its power</li>
-                        <li class="recent-posts py-2 my-1 text-left">&nbsp;&nbsp;&nbsp;&nbsp;I hear the buzz of the little</li>
-                    </ul>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 text-center px-5 border-left-col-footer">ok
-                    <h1 class="text-light font-weight-bold h1-footer text-left pl-4 text-uppercase py-4">tag cloud</h1>
 
+                <div class="col-sm-12 col-md-4 col-lg-4 text-center py-5">
+                    <div class="text-center px-3 py-2">
+                        <h1 class="h1-footer text-light text-uppercase font-weight-bold text-left pl-4 py-4">about us
+                        </h1>
+                        <p class="text-footer text-left px-3">A wonderful serenity has taken possession of my entire
+                            soul,
+                            like these
+                            sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm
+                            of
+                            existence in this spot, which was created for the bliss of</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4 text-center py-5">
+                    <div class="border-left-col-footer text-center px-3 py-2">
+                        <h1 class="h1-footer text-light text-uppercase font-weight-bold text-left pl-4 py-4">recent
+                            posts
+                        </h1>
+                        <ul>
+                            <li class="recent-posts text-left py-2 my-1">&nbsp;&nbsp;&nbsp;&nbsp;Hello world!</li>
+                            <li class="recent-posts text-left py-2 my-1">&nbsp;&nbsp;&nbsp;&nbsp;Wonderful serenity has
+                                taken</li>
+                            <li class="recent-posts text-left py-2 my-1">&nbsp;&nbsp;&nbsp;&nbsp;In my soul and absorb
+                                its
+                                power</li>
+                            <li class="recent-posts text-left py-2 my-1">&nbsp;&nbsp;&nbsp;&nbsp;I hear the buzz of the
+                                little</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4 py-5">
+                    <div class="border-left-col-footer text-center px-3 py-2">
+                        <h1 class="h1-footer text-uppercase text-light font-weight-bold text-left pl-4 py-4">tag cloud
+                        </h1>
                         <ul class="ul-footer d-flex flex-wrap">
                             <li>
                                 <input type="button" class="btn-footer text-uppercase m-1 px-3 py-2" value="business">
@@ -340,33 +450,37 @@
                                 <input type="button" class="btn-footer text-uppercase m-1 px-3 py-2" value="logo">
                             </li>
                             <li>
-                                    <input type="button" class="btn-footer text-uppercase m-1 px-3 py-2" value="photography">
-                                </li>    
+                                <input type="button" class="btn-footer text-uppercase m-1 px-3 py-2"
+                                    value="photography">
+                            </li>
                             <li>
-                                    <input type="button" class="btn-footer text-uppercase m-1 px-3 py-2" value="time">
-                                </li>                            
+                                <input type="button" class="btn-footer text-uppercase m-1 px-3 py-2" value="time">
+                            </li>
                             <li>
                                 <input type="button" class="btn-footer text-uppercase m-1 px-3 py-2" value="trips">
                             </li>
                             <li>
-                                    <input type="button" class="btn-footer text-uppercase m-1 px-3 py-2" value="works">
-                                </li>
-                                <li>
-                                        <input type="button" class="btn-footer text-uppercase m-1 px-3 py-2" value="works space">
-                                    </li>
+                                <input type="button" class="btn-footer text-uppercase m-1 px-3 py-2" value="works">
+                            </li>
+                            <li>
+                                <input type="button" class="btn-footer text-uppercase m-1 px-3 py-2"
+                                    value="works space">
+                            </li>
                         </ul>
-
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- fin section footer -->
 
+
     <!-- debut section copyright -->
-    <section class="copyright text-center p-5">
-        <p style="color: #838383;">Copyright 2020 GoodLayers, All Right Reserved</p>
+    <section class="copyright text-center py-4">
+        <p class="text-uppercase">copyright 2020 goodLayers, all right reserved</p>
     </section>
     <!-- fin section copyright -->
+
 
     <script src="public/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
