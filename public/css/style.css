@@ -9514,6 +9514,8 @@ h3 {
 @font-face {
   font-family: "Poppins";
   src: url("../../public/fonts/Poppins-Regular.ttf");
+  font-family: "Source";
+  src: url("../../public/fonts/SourceSansPro-Regular.ttf");
 }
 .changeBgColor {
   border: 3px solid black;
@@ -9646,8 +9648,10 @@ body i {
 .btn-footer {
   color: #9b9b9b !important;
   background-color: #212121 !important;
-  border: 1px solid #9b9b9b !important;
-  font-size: 13px;
+  border: 1px solid #353535 !important;
+  font-size: 11px;
+  font-family: "Source", sans-serif;
+  color: #969696;
 }
 
 .ul-footer {
@@ -9655,8 +9659,34 @@ body i {
 }
 
 .h1-footer {
-  font-size: 16px;
   font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.recent-posts {
+  font-family: "Source", sans-serif;
+  font-size: 14px;
+  color: #9b9b9b !important;
+  list-style-type: none;
+  border-bottom: 1px solid #353535 !important;
+  border-width: thin;
+}
+
+.recent-posts::before {
+  content: ">";
+  color: #9b9b9b !important;
+}
+
+.text-footer {
+  font-family: "Source", sans-serif;
+  font-size: 15px;
+  color: #9b9b9b !important;
+}
+
+.border-left-col-footer {
+  border-left: 1px solid #353535 !important;
+  border-left-width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
