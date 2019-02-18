@@ -26,31 +26,54 @@ input2.addEventListener('click', () => {
 
 //script espace de connection et inscription
 
-
 // Epace de connection qui apparait
 
 let btnConnection = document.getElementById('btn-connection');
+let btnInscription = document.getElementById('btn-inscription');
 
+let maDivConnection = document.getElementById('connection-form')
 let maDivInscription = document.getElementById('inscription-form');
 
+let formulaire = document.getElementById('formulaire');
+formulaire.style.display = "none";
+
 connection = () =>{
-    let maDiv = document.getElementById('test2');
 
-    maDiv.style.display = "none";
+    if (formulaire.style.display === "none") {
+        formulaire.style.display = "block";
+    }
 
-    maDivInscription.style.display ="none"
-
-    if (maDiv.style.display === "none") {
-        maDiv.style.display = "block";
-    } else {
-        maDiv.style.display = "none";
-    }   
+    maDivConnection.style.display = "block"
+    maDivInscription.style.display = "none"
 }
 
-btnConnection.addEventListener('click', connection);
+inscription = () =>{
+        
+    if (maDivInscription.style.display === "none"){
+        maDivInscription.style.display = "block";
+    }
+    
+}
 
+
+btnConnection.addEventListener('click', connection);
+btnInscription.addEventListener('click', inscription);
 
 //Espace d'inscription qui apparait et espace de connection qui disparait
 
+// let boutonInscription = document.getElementById('inscription');
+// console.log(boutonInscription)
+// let maDivInscription = document.getElementById('inscription-form');
+// console.log(maDivInscription)
 
+// inscription = () =>{
+//     let maDivInscription = document.getElementById('inscription-form');
+//     maDivInscription.style.display = "none"
+//     if (maDivInscription === "none") {
+//         maDivInscription.style.display = "block";
+//     } else {
+//         maDivInscription.style.display = "none"
+//     }
+// }
 
+// boutonInscription.addEventListener('click', inscription)
