@@ -9627,10 +9627,15 @@ body i {
 
 .customers-grey {
   background-color: #f3f2f3;
+  max-width: 30% !important;
+  max-width: 100% !important;
 }
 
 .customers-bordeau {
   background-color: #c3544e;
+  max-width: 30% !important;
+  max-width: 100% !important;
+  color: white;
 }
 
 .h1-customers-grey {
@@ -9647,10 +9652,6 @@ body i {
 
 .ul-footer {
   display: block;
-}
-
-.col-lg-4 {
-  max-width: 32% !important;
 }
 
 /*# sourceMappingURL=style.css.map */
