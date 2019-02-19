@@ -35,11 +35,10 @@
                             placeholder="Choisissez votre mot de passe">
                     </div>
                     <button type="submit" class="btn btn-primary" id="connection_s'inscrire">Se connecter</button>
-                    <button type="submit" class="btn btn-primary" id="btnInscription">S'inscrire</button>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn-inscription btn btn-primary">S'inscrire</button>
                 </div>
             </div>
         </div>
@@ -100,11 +99,13 @@
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6">
-                            <h4>Shop at</h4>
-                            <h6>emporium</h6>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my</p>
-                            <input type="button" value="sale items" class="btn-head-para text-uppercase font-weight-bold p-3">
+                        <div class="col-6 align-self-center text-center">
+                            <p class="shop-at">Shop at</p>
+                            <p class="emporium-header font-weight-bold display-1">emporium.</p>
+                            <p class="text-header">A wonderful serenity has taken possession of my entire soul, like
+                                these sweet mornings of spring which I enjoy with my</p>
+                            <input type="button" value="sale items"
+                                class="btn-head-para text-uppercase font-weight-bold p-3">
 
                         </div>
                         <div class="col-6">
@@ -120,17 +121,20 @@
 
 
     <!-- debut section living-room -->
-    <section class="living-room p-4">
-        <div class="container">
-            <div class="row">
+    <section class="p-4">
+        <div class="container-fluid">
+            <div class="row living-room">
                 <div class="col-sm-12 col-lg-4 py-2">
                     <img class="img-fluid" src="/public/images/services/service-1.jpg" alt="slider-1">
+                    <h4 class="text-living-room text-light font-weight-bold pb-2">Living Room</h4>
                 </div>
                 <div class="col-sm-12 col-lg-4 py-2">
                     <img class="img-fluid" src="/public/images/services/service-2.jpg" alt="slide-2">
+                    <h4 class="text-living-room text-light font-weight-bold pb-2">Living Room</h4>
                 </div>
                 <div class="col-sm-12 col-lg-4 py-2">
                     <img class="img-fluid" src="/public/images/services/slider-3.jpg" alt="slide-3">
+                    <h4 class="text-living-room text-light font-weight-bold pb-2">Living Room</h4>
                 </div>
             </div>
         </div>
@@ -348,13 +352,224 @@
 
 
     <!-- debut section parallax -->
-    <section class="parallax">
-        <div class="parallax-div text-center">
+    <section class="parallax py-5">
+        <div class="parallax-div text-center my-5">
             <h1 class="text-white font-weight-bold">Discover Thousands Of Great Products</h1>
             <input type="button" value="learn more" class="btn-head-para text-uppercase font-weight-bold p-3">
         </div>
     </section>
     <!-- fin section parallax -->
+
+
+    <!-- debut carroussel -->
+    <section class="carroussel text-center py-5">
+        <h1 class="h1-caroussel font-weight-bold py-5">Hot Fashion Products</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="container">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+                                    <div class="modifIMG2">
+                                            <img src="/public/images/products/product-tshitr-white-700x500.jpg" class="img-carroussel img-fluid d-block" alt="white t-shit">
+                                            <div class="row m-0 w-100">
+                                                <div class="col-6 bg-dark py-3">
+                                                    <a href="#" class="text-smaller text-light">
+                                                        <i class="far fa-eye mx-1"></i> View detail</a>
+                                                </div>
+                                                <div class="col-6 bg-danger py-3">
+                                                    <a href="#" class="text-smaller text-light">
+                                                        <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="text-center m-4">
+                                        <a class="decoration-none" href="#">
+                                            <h5 class="title-products font-weight-bold">Tshirt White</h5>
+                                        </a>
+                                        <p class="prix-product font-weight-bold">$600.00</p>
+                                    </div>
+                            </div>
+                            <div class="col">
+                                    <div class="modifIMG2">
+                                            <img src="/public/images/products/product-bag-2-700x500.jpg" alt="product bag 2" class="img-carroussel img-fluid d-block" alt="product bag">
+                                            <div class="row m-0 w-100">
+                                                <div class="col-6 bg-dark py-3">
+                                                    <a href="#" class="text-smaller text-light">
+                                                        <i class="far fa-eye mx-1"></i> View detail</a>
+                                                </div>
+                                                <div class="col-6 bg-danger py-3">
+                                                    <a href="#" class="text-smaller text-light">
+                                                        <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="text-center m-4">
+                                        <a class="decoration-none" href="#">
+                                            <h5 class="title-products font-weight-bold">Woman Bag</h5>
+                                        </a>
+                                        <p class="prix-product font-weight-bold">$600.00</p>
+                                    </div>
+                            </div>
+                            <div class="col">
+                                    <div class="modifIMG2">
+                                            <img src="/public/images/products/product-jacket-700x500.jpg" alt="product jacket" class="img-carroussel img-fluid d-block" alt="product bag">
+                                            <div class="row m-0 w-100">
+                                                <div class="col-6 bg-dark py-3">
+                                                    <a href="#" class="text-smaller text-light">
+                                                        <i class="far fa-eye mx-1"></i> View detail</a>
+                                                </div>
+                                                <div class="col-6 bg-danger py-3">
+                                                    <a href="#" class="text-smaller text-light">
+                                                        <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="text-center m-4">
+                                        <a class="decoration-none" href="#">
+                                            <h5 class="title-products font-weight-bold">Jacket</h5>
+                                        </a>
+                                        <p class="prix-product font-weight-bold">$40.00</p>
+                                    </div>
+                            </div>                            
+                            <div class="col">
+                                    <div class="modifIMG2">
+                                            <img src="/public/images/products/product-shoes-700x500.jpg" alt="product shoes" class="img-carroussel img-fluid d-block">
+                                            <div class="row m-0 w-100">
+                                                <div class="col-6 bg-dark py-3">
+                                                    <a href="#" class="text-smaller text-light">
+                                                        <i class="far fa-eye mx-1"></i> View detail</a>
+                                                </div>
+                                                <div class="col-6 bg-danger py-3">
+                                                    <a href="#" class="text-smaller text-light">
+                                                        <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="text-center m-4">
+                                        <a class="decoration-none text-smaller" href="#">
+                                            <h5 class="title-products font-weight-bold">minimal shoes</h5>
+                                        </a>
+                                        <p class="prix-product font-weight-bold">$60.00</p>
+                                    </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                            <div class="row">
+                                    <div class="col">
+                                            <div class="modifIMG2">
+                                                    <img src="/public/images/products/product-tshitr-700x500.jpg" class="img-carroussel img-fluid d-block" alt="white t-shit">
+                                                    <div class="row m-0 w-100">
+                                                        <div class="col-6 bg-dark py-3">
+                                                            <a href="#" class="text-smaller text-light">
+                                                                <i class="far fa-eye mx-1"></i> View detail</a>
+                                                        </div>
+                                                        <div class="col-6 bg-danger py-3">
+                                                            <a href="#" class="text-smaller text-light">
+                                                                <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="text-center m-4">
+                                                <a class="decoration-none" href="#">
+                                                    <h5 class="title-products font-weight-bold">Minimal t-shirt</h5>
+                                                </a>
+                                                <p class="prix-product font-weight-bold">$15.00</p>
+                                            </div>
+                                    </div>
+                                    <div class="col">
+                                            <div class="modifIMG2">
+                                                    <img src="/public/images/products/product-bag-700x500.jpg" class="img-carroussel img-fluid d-block" alt="product bag">
+                                                    <div class="row m-0 w-100">
+                                                        <div class="col-6 bg-dark py-3">
+                                                            <a href="#" class="text-smaller text-light">
+                                                                <i class="far fa-eye mx-1"></i> View detail</a>
+                                                        </div>
+                                                        <div class="col-6 bg-danger py-3">
+                                                            <a href="#" class="text-smaller text-light">
+                                                                <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="m-4 text-center">
+                                                    <span class="sales-icone rounded-circle font-weight-bold py-2">sales!</span>
+                                                    <a class="decoration-none" href="#">
+                                                        <h5 class="title-products font-weight-bold">Woman bag</h5>
+                                                    </a>
+                                                    <p class="prix-product font-weight-bold"><span class="light-grey"><del>$34.00</del></span> $600.00</p>
+                                                </div>
+                                    </div>
+                                    <div class="col">
+                                            <div class="modifIMG2">
+                                                    <img src="/public/images/products_mini/product-gloves.jpg" class="img-carroussel img-fluid d-block" alt="product gloves">
+                                                    <div class="row m-0 w-100">
+                                                        <div class="col-6 bg-dark py-3">
+                                                            <a href="#" class="text-smaller text-light">
+                                                                <i class="far fa-eye mx-1"></i> View detail</a>
+                                                        </div>
+                                                        <div class="col-6 bg-danger py-3">
+                                                            <a href="#" class="text-smaller text-light">
+                                                                <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="m-4 text-center">
+                                                    <span class="sales-icone rounded-circle font-weight-bold py-2">sales!</span>
+                                                    <a class="decoration-none" href="#">
+                                                        <h5 class="title-products font-weight-bold">Leather Gloves</h5>
+                                                    </a>
+                                                    <p class="prix-product font-weight-bold"><span class="light-grey"><del>$34.00</del></span> $600.00</p>
+                                                </div>
+                                    </div>                            
+                                    <div class="col">
+                                            <div class="modifIMG2">
+                                                    <img src="/public/images/products/product-shoes-700x500.jpg" alt="product shoes" class="img-carroussel img-fluid d-block">
+                                                    <div class="row m-0 w-100">
+                                                        <div class="col-6 bg-dark py-3">
+                                                            <a href="#" class="text-smaller text-light">
+                                                                <i class="far fa-eye mx-1"></i> View detail</a>
+                                                        </div>
+                                                        <div class="col-6 bg-danger py-3">
+                                                            <a href="#" class="text-smaller text-light">
+                                                                <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="text-center m-4">
+                                                <a class="decoration-none" href="#">
+                                                    <h5 class="title-products font-weight-bold">Minimal shoes</h5>
+                                                </a>
+                                                <p class="prix-product font-weight-bold">$60.00</p>
+                                            </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col"><img src="/public/images/products/product-jacket-700x500.jpg"
+                                    class="img-carroussel d-block w-100" alt="product jacket"></div>
+                            <div class="col"><img src="/public/images/products/product-shoes-700x500.jpg"
+                                    class="img-carroussel d-block w-100" alt="product shoes"></div>
+                            <div class="col"><img src="/public/images/products/product-tshitr-700x500.jpg"
+                                    class="img-carroussel d-block w-100" alt="product tshirt"></div>
+                            <div class="col"><img src="/public/images/products/product-tshitr-white-700x500.jpg"
+                                    class="img-carroussel d-block w-100" alt="white t-shit"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- fin carroussel -->
 
 
     <!-- debut section customers -->
@@ -483,6 +698,7 @@
 
 
     <script src="public/js/index.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

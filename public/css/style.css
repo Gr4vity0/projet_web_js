@@ -5432,7 +5432,7 @@ a.close.disabled {
   width: 100%;
   margin-right: -100%;
   backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 @media screen and (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -5471,7 +5471,7 @@ a.close.disabled {
 .carousel-fade .active.carousel-item-right {
   z-index: 0;
   opacity: 0;
-  transition: 0s 0.6s opacity;
+  transition: 0s 0.3s opacity;
 }
 @media screen and (prefers-reduced-motion: reduce) {
   .carousel-fade .active.carousel-item-left,
@@ -9540,6 +9540,29 @@ body i {
 .img-header {
   background-color: #f3f2f3 !important;
 }
+.img-header .shop-at {
+  font-size: 50px;
+  color: #c3544e !important;
+  font-family: "Poppins", sans-serif;
+}
+.img-header .emporium-header {
+  font-size: 4em;
+  font-family: "Poppins", sans-serif;
+}
+.img-header .text-header {
+  color: #909090;
+}
+
+.living-room {
+  position: relative;
+}
+.living-room .text-living-room {
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  border-bottom: 1px solid white;
+}
 
 .modifIMG {
   position: relative;
@@ -9592,15 +9615,47 @@ body i {
   background-image: url("/public/images/cta-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
 }
 .parallax .parallax-div {
-  position: absolute;
-  top: 40%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50%;
   left: 25%;
 }
 .parallax .parallax-div h1 {
   font-family: "Poppins", sans-serif;
+}
+
+.h1-caroussel {
+  font-family: "Poppins", sans-serif;
+  font-size: 23px;
+  color: #383838;
+}
+
+.modifIMG2 {
+  position: relative;
+  overflow: hidden;
+}
+.modifIMG2 img {
+  margin: 0px;
+  transition-duration: 0.5s;
+}
+.modifIMG2 .row {
+  margin: 0px;
+  width: 100%;
+  position: absolute;
+  bottom: -50%;
+  transition-duration: 0.5s;
+}
+.modifIMG2:hover img {
+  transform: scale(1.3);
+}
+.modifIMG2:hover .row {
+  bottom: 0%;
+}
+
+.text-smaller {
+  font-size: 12px;
 }
 
 .customers-grey {
