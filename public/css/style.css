@@ -9529,6 +9529,10 @@ body i {
   font-size: 10px;
 }
 
+.empoule {
+  font-size: 14px;
+}
+
 .changeBgColor {
   border: 3px solid black;
 }
@@ -9546,7 +9550,7 @@ body i {
   font-family: "Poppins", sans-serif;
 }
 .img-header .emporium-header {
-  font-size: 4em;
+  font-size: 5em;
   font-family: "Poppins", sans-serif;
 }
 .img-header .text-header {
@@ -9584,6 +9588,10 @@ body i {
 }
 .modifIMG:hover .row {
   bottom: 0%;
+}
+
+.opacity {
+  opacity: 0.8;
 }
 
 .title-products {

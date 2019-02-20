@@ -16,7 +16,7 @@
     <!-- Modal connection-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" role="document" id="modal-connection">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Connection</h5>
@@ -26,37 +26,77 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="user" class="label-form">Votre nom d'utilisateur</label>
+                        <label for="user" class="label-form text-dark">Votre nom d'utilisateur</label>
                         <input type="text" class="form-control" id="user" placeholder="Tapez votre nom d'utilisateur">
                     </div>
                     <div class="form-group">
-                        <label for="mdp" class="label-form">Mot de passe</label>
+                        <label for="mdp" class="label-form text-dark">Mot de passe</label>
                         <input type="password" class="form-control" id="mdp"
                             placeholder="Choisissez votre mot de passe">
                     </div>
-                    <button type="submit" class="btn btn-primary" id="connection_s'inscrire">Se connecter</button>
+                    <button type="submit" class="btn btn-primary">Se connecter</button>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn-inscription btn btn-primary">S'inscrire</button>
+                    <button type="button" class="btn-inscription btn btn-primary" id="btn-inscription">S'inscrire</button>
                 </div>
             </div>
         </div>
+        <div class="modal-dialog" role="document" id="modal-inscription">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel2">Inscription</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="user" class="label-form text-dark">Choisissez votre nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="user3" placeholder="Tapez votre nom d'utilisateur">
+                        </div>
+                        <div class="form-group">
+                            <label for="mdp" class="label-form text-dark">Choisissez votre mot de passe</label>
+                            <input type="password" class="form-control" id="mdp2"
+                                placeholder="*******">
+                        </div>
+                        <div class="form-group">
+                                <label for="mdp" class="label-form text-dark">Confirmez votre mot de passe</label>
+                                <input type="password" class="form-control" id="mdp3"
+                                    placeholder="*******">
+                        </div>
+                        <div class="form-group">
+                                <label for="mdp" class="label-form text-dark">Adresse email</label>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="email">
+                        </div>
+                        <div class="form-group">
+                                <label for="mdp" class="label-form text-dark">Confirmez votre adresse email</label>
+                                <input type="email" class="form-control" id="email2"
+                                    placeholder="email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Je m'inscris!</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="btn-seconnecter">Se connecter</button>
+                    </div>
+                </div>
+            </div>
     </div>
 
 
-    <!-- debut header -->
+    <!-- debut navbar -->
     <header class="header py-3">
-        <h1 class="text-center font-weight-bold mt-5">emporium.</h1>
-
-        <!-- debut navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light transparent">
+        <h1 class="text-center font-weight-bold py-5 my-5">emporium.</h1>
+        <nav class="navbar navbar-expand-lg navbar-light transparent" id="maNav">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse offset-2" id="navbarSupportedContent">
+                
+                <h1 class="text-left font-weight-bold d-none" id="emporiumh1">emporium.</h1>
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active px-2">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -79,10 +119,12 @@
                 </ul>
                 <ul class="navbar-nav ml-4">
                     <li class="nav-item">
-                        <input type="button" id="btn-noir" class="bg-dark changeBgColor px-3 mx-1">
+                        <!-- <input type="button" id="btn-noir" class="bg-dark changeBgColor px-3 mx-1"> -->
+                        <button type="button" class="bg-dark changeBgColor px-3 mx-1"></button>
                     </li>
                     <li class="nav-item">
-                        <input type="button" id="btn-blanc" class="bg-light changeBgColor px-3 mx-1">
+                        <!-- <input type="button" id="btn-blanc" class="bg-light changeBgColor px-3 mx-1"> -->
+                        <button type="button" class="bg-light changeBgColor px-3 mx-1"></button>
                     </li>
                     <li class="nav-item">
                         <button type="button" class="btn btn-primary mx-1" data-toggle="modal"
@@ -93,7 +135,10 @@
                 </ul>
             </div>
         </nav>
-        <!-- fin navbar -->
+    <!-- fin navbar -->
+
+
+    <!-- debut header -->
 
         <div class="img-header">
             <div class="container-fluid">
@@ -103,7 +148,7 @@
                             <p class="shop-at">Shop at</p>
                             <p class="emporium-header font-weight-bold display-1">emporium.</p>
                             <p class="text-header">A wonderful serenity has taken possession of my entire soul, like
-                                these sweet mornings of spring which I enjoy with my</p>
+                                these sweet  mornings of spring which I enjoy with my</p>
                             <input type="button" value="sale items"
                                 class="btn-head-para text-uppercase font-weight-bold p-3">
 
@@ -152,11 +197,11 @@
                         <img src="/public/images/products_mini/product-luxry-sofa.jpg" alt="Luxury Sofa"
                             class="img-fluid">
                         <div class="row m-0 w-100">
-                            <div class="col-6 bg-dark py-3">
+                            <div class="col-6 opacity bg-dark py-3">
                                 <a href="#" class="text-light">
                                     <i class="far fa-eye mx-1"></i> View detail</a>
                             </div>
-                            <div class="col-6 bg-danger py-3">
+                            <div class="col-6 opacity bg-danger py-3">
                                 <a href="#" class="text-light">
                                     <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                             </div>
@@ -175,11 +220,11 @@
                         <img src="/public/images/products_mini/product-gloves.jpg" alt="product-gloves"
                             class="img-fluid">
                         <div class="row m-0 w-100">
-                            <div class="col-6 bg-dark py-3">
+                            <div class="col-6 opacity bg-dark py-3">
                                 <a href="#" class="text-light">
                                     <i class="far fa-eye mx-1"></i> View detail</a>
                             </div>
-                            <div class="col-6 bg-danger py-3">
+                            <div class="col-6 opacity bg-danger py-3">
                                 <a href="#" class="text-light">
                                     <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                             </div>
@@ -198,7 +243,7 @@
                     <div class="modifIMG">
                         <img src="/public/images/products_mini/product-cups.jpg" alt="product cups" class="img-fluid">
                         <div class="row m-0 w-100">
-                            <div class="col-6 bg-dark py-3">
+                            <div class="col-6 opacity bg-dark py-3">
                                 <a href="#" class="text-light">
                                     <i class="far fa-eye mx-1"></i> View detail</a>
                             </div>
@@ -219,11 +264,11 @@
                     <div class="modifIMG">
                         <img src="/public/images/products_mini/product-bag.jpg" alt="product bags" class="img-fluid">
                         <div class="row m-0 w-100">
-                            <div class="col-6 bg-dark py-3">
+                            <div class="col-6 opacity bg-dark py-3">
                                 <a href="#" class="text-light">
                                     <i class="far fa-eye mx-1"></i> View detail</a>
                             </div>
-                            <div class="col-6 bg-danger py-3">
+                            <div class="col-6 opacity bg-danger py-3">
                                 <a href="#" class="text-light">
                                     <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                             </div>
@@ -243,11 +288,11 @@
                         <img src="/public/images/products_mini/product-tshitr.jpg" alt="product tshirts"
                             class="img-fluid">
                         <div class="row m-0 w-100">
-                            <div class="col-6 bg-dark py-3">
+                            <div class="col-6 opacity bg-dark py-3">
                                 <a href="#" class="text-light">
                                     <i class="far fa-eye mx-1"></i> View detail</a>
                             </div>
-                            <div class="col-6 bg-danger py-3">
+                            <div class="col-6 opacity bg-danger py-3">
                                 <a href="#" class="text-light">
                                     <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                             </div>
@@ -264,11 +309,11 @@
                     <div class="modifIMG">
                         <img src="/public/images/products_mini/product-plates.jpg" alt="" class="img-fluid">
                         <div class="row w-100 m-0">
-                            <div class="col-6 bg-dark py-3">
+                            <div class="col-6 opacity bg-dark py-3">
                                 <a href="#" class="text-light">
                                     <i class="far fa-eye mx-1"></i> View detail</a>
                             </div>
-                            <div class="col-6 bg-danger py-3">
+                            <div class="col-6 opacity bg-danger py-3">
                                 <a href="#" class="text-light">
                                     <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                             </div>
@@ -286,11 +331,11 @@
                         <img src="/public/images/products_mini/product-modern-sofa.jpg" alt="modern sofa"
                             class="img-fluid">
                         <div class="row m-0 w-100">
-                            <div class="col-6 bg-dark py-3">
+                            <div class="col-6 opacity bg-dark py-3">
                                 <a href="#" class="text-light">
                                     <i class="far fa-eye mx-1"></i> View detail</a>
                             </div>
-                            <div class="col-6 bg-danger py-3">
+                            <div class="col-6 opacity bg-danger py-3">
                                 <a href="#" class="text-light">
                                     <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                             </div>
@@ -307,11 +352,11 @@
                     <div class="modifIMG">
                         <img src="/public/images/products_mini/product-bed.jpg" alt="" class="img-fluid">
                         <div class="row m-0 w-100">
-                            <div class="col-6 bg-dark py-3">
+                            <div class="col-6 opacity bg-dark py-3">
                                 <a href="#" class="text-light">
                                     <i class="far fa-eye mx-1"></i> View detail</a>
                             </div>
-                            <div class="col-6 bg-danger py-3">
+                            <div class="col-6 opacity bg-danger py-3">
                                 <a href="#" class="text-light">
                                     <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                             </div>
@@ -328,11 +373,11 @@
                     <div class="modifIMG">
                         <img src="/public/images/products_mini/product-shoes.jpg" alt="product shoes" class="img-fluid">
                         <div class="row m-0 w-100">
-                            <div class="col-6 bg-dark py-3">
+                            <div class="col-6 opacity bg-dark py-3">
                                 <a href="#" class="text-light">
                                     <i class="far fa-eye mx-1"></i> View detail</a>
                             </div>
-                            <div class="col-6 bg-danger py-3">
+                            <div class="col-6 opacity bg-danger py-3">
                                 <a href="#" class="text-light">
                                     <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                             </div>
@@ -378,11 +423,11 @@
                                     <div class="modifIMG2">
                                             <img src="/public/images/products/product-tshitr-white-700x500.jpg" class="img-carroussel img-fluid d-block" alt="white t-shit">
                                             <div class="row m-0 w-100">
-                                                <div class="col-6 bg-dark py-3">
+                                                <div class="col-6 opacity bg-dark py-3">
                                                     <a href="#" class="text-smaller text-light">
                                                         <i class="far fa-eye mx-1"></i> View detail</a>
                                                 </div>
-                                                <div class="col-6 bg-danger py-3">
+                                                <div class="col-6 opacity bg-danger py-3">
                                                     <a href="#" class="text-smaller text-light">
                                                         <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                                                 </div>
@@ -397,13 +442,13 @@
                             </div>
                             <div class="col">
                                     <div class="modifIMG2">
-                                            <img src="/public/images/products/product-bag-2-700x500.jpg" alt="product bag 2" class="img-carroussel img-fluid d-block" alt="product bag">
+                                            <img src="/public/images/products/product-bag-2-700x500.jpg" alt="product bag 2" class="img-carroussel img-fluid d-block">
                                             <div class="row m-0 w-100">
-                                                <div class="col-6 bg-dark py-3">
+                                                <div class="col-6 opacity bg-dark py-3">
                                                     <a href="#" class="text-smaller text-light">
                                                         <i class="far fa-eye mx-1"></i> View detail</a>
                                                 </div>
-                                                <div class="col-6 bg-danger py-3">
+                                                <div class="col-6 opacity bg-danger py-3">
                                                     <a href="#" class="text-smaller text-light">
                                                         <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                                                 </div>
@@ -418,13 +463,13 @@
                             </div>
                             <div class="col">
                                     <div class="modifIMG2">
-                                            <img src="/public/images/products/product-jacket-700x500.jpg" alt="product jacket" class="img-carroussel img-fluid d-block" alt="product bag">
+                                            <img src="/public/images/products/product-jacket-700x500.jpg" alt="product jacket" class="img-carroussel img-fluid d-block">
                                             <div class="row m-0 w-100">
-                                                <div class="col-6 bg-dark py-3">
+                                                <div class="col-6 opacity bg-dark py-3">
                                                     <a href="#" class="text-smaller text-light">
                                                         <i class="far fa-eye mx-1"></i> View detail</a>
                                                 </div>
-                                                <div class="col-6 bg-danger py-3">
+                                                <div class="col-6 opacity bg-danger py-3">
                                                     <a href="#" class="text-smaller text-light">
                                                         <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                                                 </div>
@@ -441,11 +486,11 @@
                                     <div class="modifIMG2">
                                             <img src="/public/images/products/product-shoes-700x500.jpg" alt="product shoes" class="img-carroussel img-fluid d-block">
                                             <div class="row m-0 w-100">
-                                                <div class="col-6 bg-dark py-3">
+                                                <div class="col-6 opacity bg-dark py-3">
                                                     <a href="#" class="text-smaller text-light">
                                                         <i class="far fa-eye mx-1"></i> View detail</a>
                                                 </div>
-                                                <div class="col-6 bg-danger py-3">
+                                                <div class="col-6 opacity bg-danger py-3">
                                                     <a href="#" class="text-smaller text-light">
                                                         <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                                                 </div>
@@ -466,11 +511,11 @@
                                             <div class="modifIMG2">
                                                     <img src="/public/images/products/product-tshitr-700x500.jpg" class="img-carroussel img-fluid d-block" alt="white t-shit">
                                                     <div class="row m-0 w-100">
-                                                        <div class="col-6 bg-dark py-3">
+                                                        <div class="col-6 opacity bg-dark py-3">
                                                             <a href="#" class="text-smaller text-light">
                                                                 <i class="far fa-eye mx-1"></i> View detail</a>
                                                         </div>
-                                                        <div class="col-6 bg-danger py-3">
+                                                        <div class="col-6 opacity bg-danger py-3">
                                                             <a href="#" class="text-smaller text-light">
                                                                 <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                                                         </div>
@@ -487,11 +532,11 @@
                                             <div class="modifIMG2">
                                                     <img src="/public/images/products/product-bag-700x500.jpg" class="img-carroussel img-fluid d-block" alt="product bag">
                                                     <div class="row m-0 w-100">
-                                                        <div class="col-6 bg-dark py-3">
+                                                        <div class="col-6 opacity bg-dark py-3">
                                                             <a href="#" class="text-smaller text-light">
                                                                 <i class="far fa-eye mx-1"></i> View detail</a>
                                                         </div>
-                                                        <div class="col-6 bg-danger py-3">
+                                                        <div class="col-6 opacity bg-danger py-3">
                                                             <a href="#" class="text-smaller text-light">
                                                                 <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                                                         </div>
@@ -509,11 +554,11 @@
                                             <div class="modifIMG2">
                                                     <img src="/public/images/products_mini/product-gloves.jpg" class="img-carroussel img-fluid d-block" alt="product gloves">
                                                     <div class="row m-0 w-100">
-                                                        <div class="col-6 bg-dark py-3">
+                                                        <div class="col-6 opacity bg-dark py-3">
                                                             <a href="#" class="text-smaller text-light">
                                                                 <i class="far fa-eye mx-1"></i> View detail</a>
                                                         </div>
-                                                        <div class="col-6 bg-danger py-3">
+                                                        <div class="col-6 opacity bg-danger py-3">
                                                             <a href="#" class="text-smaller text-light">
                                                                 <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                                                         </div>
@@ -531,11 +576,11 @@
                                             <div class="modifIMG2">
                                                     <img src="/public/images/products/product-shoes-700x500.jpg" alt="product shoes" class="img-carroussel img-fluid d-block">
                                                     <div class="row m-0 w-100">
-                                                        <div class="col-6 bg-dark py-3">
+                                                        <div class="col-6 opacity bg-dark py-3">
                                                             <a href="#" class="text-smaller text-light">
                                                                 <i class="far fa-eye mx-1"></i> View detail</a>
                                                         </div>
-                                                        <div class="col-6 bg-danger py-3">
+                                                        <div class="col-6 opacity bg-danger py-3">
                                                             <a href="#" class="text-smaller text-light">
                                                                 <i class="fas fa-shopping-basket mx-2"></i>add to card</a>
                                                         </div>
@@ -565,9 +610,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        </div>
     </section>
     <!-- fin carroussel -->
 
@@ -697,8 +739,6 @@
     <!-- fin section copyright -->
 
 
-    <script src="public/js/index.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -708,6 +748,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    <script src="public/js/index.js"></script>
 </body>
 
 </html>
